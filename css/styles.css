@@ -1,0 +1,43 @@
+html *{
+    margin: 0;
+    padding: 0;
+}
+.nav-list {
+    display: grid;
+    grid-template-areas: "home about portfolio contact";
+}
+.nav-list:nth-child(1) {
+    grid-area: home;
+}
+.nav-list:nth-child(2) {
+    grid-area: about;
+}
+.nav-list:nth-child(3) {
+    grid-area: portfolio;
+}
+.nav-list:nth-child(4) {
+    grid-area: contact;
+}
+nav {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background: #fff;
+    /* clip-path: polygon(0 0, 0% 80%, 11% 80%, 22% 100%, 78% 100%, 89% 80%, 100% 80%, 100% 0); */
+    clip-path: polygon(11% 0%, 22% 100%, 78% 100%, 89% 0%);
+}
+.nav-shadow {
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.2));
+}
+.container {
+    width: 70%;
+    margin:auto;
+}
+.navbar li {
+    list-style: none;
+    text-align: center;
+}
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
