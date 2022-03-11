@@ -6,16 +6,16 @@ html *{
     display: grid;
     grid-template-areas: "home about portfolio contact";
 }
-.nav-list:nth-child(1) {
+#home {
     grid-area: home;
 }
-.nav-list:nth-child(2) {
+#about {
     grid-area: about;
 }
-.nav-list:nth-child(3) {
+#portfolio {
     grid-area: portfolio;
 }
-.nav-list:nth-child(4) {
+#contact {
     grid-area: contact;
 }
 nav {
@@ -50,6 +50,9 @@ nav {
     color: black;
     text-decoration: none;
 }
+.active a {
+    color: blue;
+}
 .container {
     width:70%;
     margin-inline: auto;
@@ -64,6 +67,63 @@ nav {
     min-height: 300px;
     margin-bottom: 10px;
 }
+.social {
+    margin-block: 80px;
+}
+.social-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "twitter linkedin"
+    "skype gmail"
+    "github telegram"
+    "whatsapp instagram";
+}
+#Twitter {
+    grid-area: twitter;
+}
+#LinkedIn {
+    grid-area: linkedin;
+}
+#Skype {
+    grid-area: skype;
+}
+#Gmail {
+    grid-area: gmail;
+}
+#GitHub {
+    grid-area: github;
+}
+#Telegram {
+    grid-area: telegram;
+}
+#WhatsApp {
+    grid-area: whatsapp;
+}
+#Instagram {
+    grid-area: instagram;
+}
+.social-list li {
+    padding: 10px;
+    margin: 10px;
+    width:35vw;
+    height:35vw;
+    border: 1px solid black;
+    list-style: none;
+    text-align: center;
+}
+.social-list i {
+    display: block;
+}
+.social-list a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
 footer {
     /* border: 1px solid black; */
     text-align: center;
