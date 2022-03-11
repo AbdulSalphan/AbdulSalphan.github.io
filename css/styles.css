@@ -2,6 +2,10 @@ html *{
     margin: 0;
     padding: 0;
 }
+/* font awesome*/
+.fa-10x {
+    font-size: 12vw;
+}
 .nav-list {
     display: grid;
     grid-template-areas: "home about portfolio contact";
@@ -109,8 +113,12 @@ nav {
     width:35vw;
     height:35vw;
     border: 1px solid black;
+    /* border-radius: 50%; */
     list-style: none;
     text-align: center;
+}
+.social-inner {
+    
 }
 .social-list i {
     display: block;
