@@ -1,6 +1,7 @@
 html *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 /* font awesome*/
 .fa-10x {
@@ -64,7 +65,6 @@ nav {
 .content {
     margin-block: 80px 20px;
     width: 100%;
-    /* text-align: center; */
 }
 .content .rows {
     background-color: aqua;
@@ -72,10 +72,12 @@ nav {
     margin-bottom: 10px;
 }
 .social {
-    margin-block: 80px;
+    margin-block: 40px;
 }
 .social-list {
     display: grid;
+    place-items: center;
+    /* border: 1px solid black; */
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "twitter linkedin"
@@ -108,18 +110,25 @@ nav {
     grid-area: instagram;
 }
 .social-list li {
-    padding: 10px;
-    margin: 10px;
-    width:35vw;
-    height:35vw;
-    border: 1px solid black;
-    /* border-radius: 50%; */
+    width:25.5vw;
+    height:25.5vw;
+    margin-block: 2vw;
+    border-radius: 50%;
     list-style: none;
+    display: grid;
+    place-items: center;
     text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 1s ease;
 }
-.social-inner {
-    
+.social-list li:hover {
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
 }
+/* .social-inner {
+    width: 33.33%;
+    height: 33.33%;
+    margin: 33.33%;
+} */
 .social-list i {
     display: block;
 }
