@@ -67,6 +67,17 @@ nav {
     min-height: 300px;
     margin-bottom: 10px;
 }
+.contact-interact {
+    display: grid;
+    /* border: 1px solid black; */
+    grid-template-areas: "links forms forms forms";
+}
+#links {
+    grid-area: links;
+}
+#forms {
+    grid-area: forms;
+}
 .social {
     margin-block: 40px;
 }
@@ -74,10 +85,12 @@ nav {
     display: grid;
     place-items: center;
     /* border: 1px solid black; */
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    "twitter linkedin skype gmail"
-    "github telegram whatsapp instagram";
+    "twitter linkedin"
+    "skype gmail"
+    "github telegram"
+    "whatsapp instagram";
 }
 #Twitter {
     grid-area: twitter;
@@ -112,7 +125,7 @@ nav {
     display: grid;
     place-items: center;
     text-align: center;
-    box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.2);
+    /* box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.2); */
     transition: box-shadow 1s ease;
 }
 .social-list li:hover {
@@ -138,6 +151,8 @@ nav {
 }
 .form-inner {
     padding: 3vw 1.5vw;
+    background-color: beige;
+    border-radius: 50px;
 }
 .form-title {
     margin-bottom: 8px;
