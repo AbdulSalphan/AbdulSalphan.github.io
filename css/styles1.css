@@ -119,6 +119,10 @@ nav {
 .social-list li {
     width:100%;
     height:100%;
+    margin: 32px;
+    margin: 16px;
+    margin-block: 32px;
+    margin-block: 16px;
     margin-block: 2vw;
     border-radius: 50%;
     list-style: none;
@@ -166,7 +170,6 @@ nav {
 .form-row {
     margin-bottom: 16px;
 
-    display: flex;
 }
 .form-label {
     font-family: 'Inter', sans-serif;
@@ -175,6 +178,7 @@ nav {
 }
 .form-input {
     border: 1px solid rgb(50 54 59 / 20%);
+    display: block;
     border-radius: 6px;
     width: 75%;
     padding: 6px 12px;
