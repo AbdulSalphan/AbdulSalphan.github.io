@@ -126,10 +126,32 @@ nav {
 
 /* ABOUT PAGE --------------------------------------------------------------- */
 
-.tech-stack{
+.tech-stack {
     margin-block: 30px;
 }
-
+.tech-item {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    min-height: 200px;
+}
+.stack-label {
+    /* border: 1px solid black; */
+    width: 20%;
+    text-align: center;
+    margin: auto;
+}
+.tech-item i {
+    display: block;
+    /* margin: auto; */
+}
+.tech-item p {
+    width: 70%;
+    margin: auto;
+}
+#css p, #php p {
+    order: -1;
+}
 
 
 
