@@ -65,18 +65,19 @@ nav {
     position: sticky;
     top: 0;
     width: 100%;
-    height: 80px;
+    height: 64px;
     z-index:8;
     /* background: red; */
     background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0));
 }
 .nav-shadow {
-    margin-top: -80px;
+    margin-top: -64px;
     position: sticky;
     top: 0;
     width: 100%;
     filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.2));
     z-index: 10;
+    height: 64px;
 }
 /* .nav-shadow::before {
     margin-top: -80px;
@@ -94,6 +95,7 @@ nav {
 }
 .navbar a {
     color: black;
+    line-height: 24px;
 }
 .active a {
     color: blue;
@@ -127,13 +129,14 @@ nav {
 /* ABOUT PAGE --------------------------------------------------------------- */
 
 .tech-stack {
-    margin-block: 30px;
+    margin-block: 32px;
 }
 .tech-item {
     display: flex;
     align-items: center;
     /* border: 1px solid black; */
     min-height: 200px;
+    border-bottom: 1px ridge;
 }
 .stack-label {
     /* border: 1px solid black; */
@@ -141,17 +144,29 @@ nav {
     text-align: center;
     margin: auto;
 }
+.stack-label .fa-size {
+    font-size: 10em; 
+}
+.tech-item h4 {
+    margin-bottom: 16px;
+}
 .tech-item i {
     display: block;
     /* margin: auto; */
 }
-.tech-item p {
+.tech-item span {
     width: 70%;
     margin: auto;
 }
-#css p, #php p {
+#css span, #php span {
     order: -1;
 }
+
+
+
+
+
+
 
 
 
@@ -300,9 +315,9 @@ footer {
     position: absolute;
     content: '';
     background-color: var(--clip-shapes);
-    height: 20%;
+    height: 64px;
     width: 20%;
-    top: -20%;
+    top: -64%;
 }
 .foot::before {
     left: 0;
@@ -330,7 +345,15 @@ footer {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {    
+    .stack-label .fa-size {
+        font-size: 8em; 
+    }
+}
+@media (max-width: 768px) {    
+    .stack-label .fa-size {
+        font-size: 6em; 
+    }
     .fa-3x {
         font-size: 3rem;
     }
@@ -364,6 +387,27 @@ footer {
     }
 }
 @media (max-width: 576px) {
+    .tech-item {
+        display: block;
+        /* align-items: center; */
+        /* border: 1px solid black; */
+        min-height: 300px;
+        padding-block: 50px;
+        border-bottom: 1px ridge;
+    }    
+    .stack-label {
+        /* border: 1px solid black; */
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .stack-label .fa-size {
+        font-size: 10em; 
+    }
+    .tech-item h4 {
+        margin-bottom: 16px;
+        text-align: center;
+    }
     .fa-3x {
         font-size: 2rem;
     }
