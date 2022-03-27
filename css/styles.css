@@ -20,9 +20,9 @@ a {
 .brand {
     background-color: var(--head-foot);
 }
-.brand-info {
-    /* margin: 16px 0; */
-}
+/* .brand-info {
+    margin: 16px 0;
+} */
 .brand-info h1, .brand-info h3 {
     display: inline;
     color: black;
@@ -118,6 +118,7 @@ nav {
     color: greenyellow;
     width: fit-content;
     margin: auto;
+    user-select: none;
 }
 
 .content .rows {
@@ -126,8 +127,22 @@ nav {
     margin-bottom: 10px;
 }
 
-/* ABOUT PAGE --------------------------------------------------------------- */
+/* HOME PAGE ---------------------------------------------------------------- */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGE --------------------------------------------------------------- */
 .tech-stack {
     margin-block: 32px;
 }
@@ -230,27 +245,20 @@ nav {
     grid-area: instagram;
 }
 .social-list li {
-    width:100%;
-    height:100%;
-    margin-block: 16px;
-    border-radius: 50%;
     list-style: none;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    /* box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.2); */
-    /* transition: box-shadow 1s ease; */
 }
-.social-list li:hover {
+.social-list i:hover {
     box-shadow:inset 0 0 80px rgba(0, 0, 0, 0.2);
 }
-/* .social-inner {
-    width: 33.33%;
-    height: 33.33%;
-    margin: 33.33%;
-} */
 .social-list i {
-    display: block;
+    width:72px;
+    height:72px;
+    line-height: 72px;
+    margin-block: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    /* box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.2); */
 }
 .social-list a {
     color: black;
@@ -376,8 +384,8 @@ footer {
         grid-template-areas: 
         "twitter linkedin skype gmail"
         "github telegram whatsapp instagram";
-        column-gap: 17%;
-        row-gap: 16px;
+        /* column-gap: 17%;
+        row-gap: 16px; */
     }
     .form-inner {
         padding: 3vw 3vw;
@@ -407,6 +415,16 @@ footer {
     .tech-item h4 {
         margin-bottom: 16px;
         text-align: center;
+    }
+    .social-list i {
+        width:64px;
+        height:64px;
+        line-height: 64px;
+        margin-block: 0;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        /* box-shadow:inset 0 0 20px rgba(0, 0, 0, 0.2); */
     }
     .fa-3x {
         font-size: 2rem;
