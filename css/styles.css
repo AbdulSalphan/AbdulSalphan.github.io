@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Permanent+Marker&family=Bungee&display=swap');
 :root {
-    --head-foot: linear-gradient(to right bottom, #16ed9a, #00e4a2, #00dba8, #00d2ad, #00c9af, #00bfb4, #00b5b7, #00aab6, #009cb6, #008eb4, #007faf, #0070a7);
-    --clip-shapes: linear-gradient(to right bottom, #ed163a, #f00052, #ef006a, #e90082, #df1699, #d231ad, #c144bf, #ac54ce, #9065db, #7072e3, #4a7de7, #0086e6);
+    --head-foot: #FCA311;
+    --clip-shapes: #14213D;
   }
 html *{
     margin: 0;
@@ -9,7 +9,7 @@ html *{
     box-sizing: border-box;
 }
 body {
-    background: rgba(255, 191, 249, 0.5);
+    background: #E5E5E5;
 }
 .container {
     width:70%;
@@ -97,11 +97,11 @@ nav {
     text-align: center;
 }
 .navbar a {
-    color: black;
+    color: var(--head-foot);
     line-height: 24px;
 }
 .active a {
-    color: blue;
+    color: #FFFFFF;
 }
 
 /* content ------------------------------------------------------------------- */
